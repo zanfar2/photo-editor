@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 // MARK: - Control
-public enum control {
-    case crop
+@objc public enum control : Int {
+    case crop = 0
     case sticker
     case draw
     case text
