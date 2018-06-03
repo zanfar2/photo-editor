@@ -115,8 +115,8 @@ extension PhotoEditorViewController {
     }
     
     func hideControls() {
-        for control in hiddenControls {
-            switch control {
+        for value in hiddenControls {
+            switch control.init(rawValue: value)! {
                 
             case .clear:
                 clearButton.isHidden = true
