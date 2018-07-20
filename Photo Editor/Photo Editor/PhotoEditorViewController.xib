@@ -268,7 +268,7 @@
                     </constraints>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cy8-ap-fH9" userLabel="Color Picker">
-                    <rect key="frame" x="0.0" y="736" width="375" height="50"/>
+                    <rect key="frame" x="0.0" y="750" width="375" height="50"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GaQ-XR-asZ">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -314,7 +314,7 @@
                 <constraint firstAttribute="trailing" secondItem="87h-1G-t5q" secondAttribute="trailing" id="kaD-bR-ZZt"/>
                 <constraint firstItem="S1Y-ZS-dct" firstAttribute="centerY" secondItem="HPk-Bg-V0q" secondAttribute="centerY" id="lCZ-Hj-EUs"/>
                 <constraint firstAttribute="trailing" secondItem="rLz-36-0xz" secondAttribute="trailing" id="moc-tG-rwG"/>
-                <constraint firstAttribute="bottomMargin" secondItem="Cy8-ap-fH9" secondAttribute="bottom" constant="-8" id="mok-x4-xHA"/>
+                <constraint firstAttribute="bottomMargin" secondItem="Cy8-ap-fH9" secondAttribute="bottom" constant="-22" id="mok-x4-xHA"/>
                 <constraint firstItem="87h-1G-t5q" firstAttribute="bottom" secondItem="yAt-sK-1nK" secondAttribute="bottom" constant="8" id="of3-AC-FQE"/>
                 <constraint firstItem="rLz-36-0xz" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="orL-eE-RPq"/>
                 <constraint firstAttribute="bottom" secondItem="ZGa-1B-gkO" secondAttribute="bottom" id="uXH-MJ-Z8t"/>
