@@ -39,10 +39,6 @@ extension PhotoEditorViewController {
                 self.colorPickerViewBottomConstraint?.constant = endFrame?.size.height ?? 0.0
             }
             
-            if #available(iOS 11.0, *) {
-                self.colorPickerViewBottomConstraint?.constant -= self.view.safeAreaInsets.bottom
-            }
-            
             UIView.animate(withDuration: duration,
                            delay: TimeInterval(0),
                            options: animationCurve,
