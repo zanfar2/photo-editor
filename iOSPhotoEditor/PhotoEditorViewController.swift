@@ -68,6 +68,7 @@ public final class PhotoEditorViewController: UIViewController {
     var activeTextView: UITextView?
     var imageViewToPan: UIImageView?
     var isTyping: Bool = false
+    var isPreventCleanup: Bool = false
     
     
     var stickersViewController: StickersViewController!
@@ -106,7 +107,15 @@ public final class PhotoEditorViewController: UIViewController {
     }
     
     override public func viewDidDisappear(_ animated: Bool) {
+        if (isPreventCleanup) {
+            isPreventCleanup = false;
+            return;
+        }
+        
         // Cleanup
+        colorsCollectionView.delegate = nil;
+        colorsCollectionView.dataSource = nil;
+        
         colorsCollectionViewDelegate.colorDelegate = nil;
         colorsCollectionViewDelegate = nil;
         
