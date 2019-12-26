@@ -34,6 +34,8 @@ extension PhotoEditorViewController {
         controller.delegate = self
         controller.image = image
         let navController = UINavigationController(rootViewController: controller)
+        
+        isPreventCleanup = true
         present(navController, animated: true, completion: nil)
     }
 
